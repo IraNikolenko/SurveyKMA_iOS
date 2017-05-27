@@ -12,6 +12,8 @@
 		84F84E6A1ED880DE00332B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F84E681ED880DE00332B30 /* Main.storyboard */; };
 		84F84E6C1ED880DE00332B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F84E6B1ED880DE00332B30 /* Assets.xcassets */; };
 		84F84E6F1ED880DE00332B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F84E6D1ED880DE00332B30 /* LaunchScreen.storyboard */; };
+		84F84E771ED96A5000332B30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84F84E761ED96A5000332B30 /* GoogleService-Info.plist */; };
+		C0B54B56F3C75B767A0FA07A /* Pods_SurveyKMA_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA82E3319959DC31A50568E7 /* Pods_SurveyKMA_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		84F84E6B1ED880DE00332B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F84E6E1ED880DE00332B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F84E701ED880DE00332B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F84E761ED96A5000332B30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA82E3319959DC31A50568E7 /* Pods_SurveyKMA_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurveyKMA_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8303C5C63029C9A01B26BC2 /* Pods-SurveyKMA_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyKMA_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurveyKMA_iOS/Pods-SurveyKMA_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F231772015BB613E7B90D875 /* Pods-SurveyKMA_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyKMA_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurveyKMA_iOS/Pods-SurveyKMA_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B54B56F3C75B767A0FA07A /* Pods_SurveyKMA_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4C504B52E90F621A457497 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E3319959DC31A50568E7 /* Pods_SurveyKMA_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84F84E581ED880DE00332B30 = {
 			isa = PBXGroup;
 			children = (
 				84F84E631ED880DE00332B30 /* SurveyKMA_iOS */,
 				84F84E621ED880DE00332B30 /* Products */,
+				B8C04CBA053FC6566417BCFA /* Pods */,
+				4A4C504B52E90F621A457497 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				84F84E6B1ED880DE00332B30 /* Assets.xcassets */,
 				84F84E6D1ED880DE00332B30 /* LaunchScreen.storyboard */,
 				84F84E701ED880DE00332B30 /* Info.plist */,
+				84F84E761ED96A5000332B30 /* GoogleService-Info.plist */,
 			);
 			path = SurveyKMA_iOS;
+			sourceTree = "<group>";
+		};
+		B8C04CBA053FC6566417BCFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F231772015BB613E7B90D875 /* Pods-SurveyKMA_iOS.debug.xcconfig */,
+				C8303C5C63029C9A01B26BC2 /* Pods-SurveyKMA_iOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F84E731ED880DE00332B30 /* Build configuration list for PBXNativeTarget "SurveyKMA_iOS" */;
 			buildPhases = (
+				0C95015AB1F4E2A4074690FD /* [CP] Check Pods Manifest.lock */,
 				84F84E5D1ED880DE00332B30 /* Sources */,
 				84F84E5E1ED880DE00332B30 /* Frameworks */,
 				84F84E5F1ED880DE00332B30 /* Resources */,
+				E3DA79BB7C135C96A272EBDF /* [CP] Embed Pods Frameworks */,
+				62D0982C1E3C5D1F359D7FA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F84E6F1ED880DE00332B30 /* LaunchScreen.storyboard in Resources */,
+				84F84E771ED96A5000332B30 /* GoogleService-Info.plist in Resources */,
 				84F84E6C1ED880DE00332B30 /* Assets.xcassets in Resources */,
 				84F84E6A1ED880DE00332B30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C95015AB1F4E2A4074690FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62D0982C1E3C5D1F359D7FA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurveyKMA_iOS/Pods-SurveyKMA_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3DA79BB7C135C96A272EBDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurveyKMA_iOS/Pods-SurveyKMA_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84F84E5D1ED880DE00332B30 /* Sources */ = {
@@ -260,6 +339,7 @@
 		};
 		84F84E741ED880DE00332B30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F231772015BB613E7B90D875 /* Pods-SurveyKMA_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SurveyKMA_iOS/Info.plist;
@@ -272,6 +352,7 @@
 		};
 		84F84E751ED880DE00332B30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8303C5C63029C9A01B26BC2 /* Pods-SurveyKMA_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SurveyKMA_iOS/Info.plist;
@@ -301,6 +382,7 @@
 				84F84E751ED880DE00332B30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
