@@ -1,4 +1,9 @@
-SURVEY ABOUT QUALITY OF EDUCATION IN KMA
+# About KMA Reviews #
+
+The system allows NaUKMA students to post reviews and evaluate courses and teachers. 
+Only registered users can see reviews for some time without leaving their own reviews. After time is up, user should post his own review to have opportunity to read others reviews.
+
+## How to install ##
 
 Before you begin, you need a few things set up in your environment:
   - Xcode
@@ -21,3 +26,12 @@ Then you need to add Firebase to your app
 4. Install the pods and open the .xcworkspace file to see the project in Xcode.
   $ pod install
   $ open your-project.xcworkspace
+
+
+## Related projects ##
+
+[Android App](https://github.com/SanchoPanchos/topchik-team-android)
+
+[web](https://bitbucket.org/Oliko/kma-reviews)
+
+Made by Topchik Team
