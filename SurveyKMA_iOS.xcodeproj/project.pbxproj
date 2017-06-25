@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840749031EFC430800324FB8 /* CoursesReviewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840749021EFC430800324FB8 /* CoursesReviewTableController.swift */; };
+		840749061EFC437700324FB8 /* CourseReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840749051EFC437700324FB8 /* CourseReview.swift */; };
+		846EFD3E1EED89270005A65C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EFD3D1EED89270005A65C /* RegisterViewController.swift */; };
+		846EFD401EEDCD610005A65C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EFD3F1EEDCD610005A65C /* LoginViewController.swift */; };
 		84F84E651ED880DE00332B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F84E641ED880DE00332B30 /* AppDelegate.swift */; };
 		84F84E671ED880DE00332B30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F84E661ED880DE00332B30 /* ViewController.swift */; };
 		84F84E6A1ED880DE00332B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F84E681ED880DE00332B30 /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840749021EFC430800324FB8 /* CoursesReviewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesReviewTableController.swift; sourceTree = "<group>"; };
+		840749051EFC437700324FB8 /* CourseReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseReview.swift; sourceTree = "<group>"; };
+		846EFD3D1EED89270005A65C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		846EFD3F1EEDCD610005A65C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84F84E611ED880DE00332B30 /* SurveyKMA_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyKMA_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F84E641ED880DE00332B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F84E661ED880DE00332B30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +58,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		840749041EFC435B00324FB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				840749051EFC437700324FB8 /* CourseReview.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		84F84E581ED880DE00332B30 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +87,10 @@
 		84F84E631ED880DE00332B30 /* SurveyKMA_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				840749041EFC435B00324FB8 /* Models */,
+				840749021EFC430800324FB8 /* CoursesReviewTableController.swift */,
+				846EFD3D1EED89270005A65C /* RegisterViewController.swift */,
+				846EFD3F1EEDCD610005A65C /* LoginViewController.swift */,
 				84F84E641ED880DE00332B30 /* AppDelegate.swift */,
 				84F84E661ED880DE00332B30 /* ViewController.swift */,
 				84F84E681ED880DE00332B30 /* Main.storyboard */,
@@ -215,7 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846EFD401EEDCD610005A65C /* LoginViewController.swift in Sources */,
+				840749031EFC430800324FB8 /* CoursesReviewTableController.swift in Sources */,
+				846EFD3E1EED89270005A65C /* RegisterViewController.swift in Sources */,
 				84F84E671ED880DE00332B30 /* ViewController.swift in Sources */,
+				840749061EFC437700324FB8 /* CourseReview.swift in Sources */,
 				84F84E651ED880DE00332B30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
