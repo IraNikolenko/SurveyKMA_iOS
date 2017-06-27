@@ -19,6 +19,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.isNavigationBarHidden = true
+        
         loginButton.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
         passwordTextField.isSecureTextEntry = true
         createNewAccountButton.addTarget(self, action: #selector(register), for: .touchUpInside)
@@ -31,9 +33,9 @@ class LoginViewController: UIViewController {
     }
     
     func register(){
-        let registerController = LoginViewController()
-        //self.navigationController?.pushViewController(registerController, animated: true)
-        self.present(registerController, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "RegisterViewController")
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func handleRegister(){
@@ -49,10 +51,9 @@ class LoginViewController: UIViewController {
                 return
             }
             
-//            let mainView = NewsController()
-//            self.navigationController?.pushViewController(mainView, animated: true)
-            //self.present(mainView, animated: true, completion: nil)
-            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "MainScreenViewController")
+            self.navigationController?.pushViewController(controller, animated: true)
         })
     }
 

@@ -17,12 +17,15 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
     @IBOutlet weak var yearOfGratuationTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var faculty: UITextField!
     @IBOutlet weak var userPhoto: UIImageView!
     @IBOutlet weak var signInButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.isNavigationBarHidden = true
+        
         registerButton.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
         passwordTextField.isSecureTextEntry = true
         signInButton.addTarget(self, action: #selector(signIn), for: .touchUpInside)
@@ -32,9 +35,9 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
     }
 
     func signIn(){
-        let registerController = RegisterViewController()
-        //self.navigationController?.pushViewController(registerController, animated: true)
-        self.present(registerController, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func handleRegister(){
@@ -43,24 +46,31 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
         let storageRef = FIRStorage.storage().reference().child("\(imageName).png")
         var imageUrl: String = ""
         
-        if(self.userPhoto.image != nil){
-            if let uploadData = UIImagePNGRepresentation(self.userPhoto.image!){
-                storageRef.put(uploadData, metadata: nil, completion: { (metadata, error) in
-                    
-                    if error != nil{
-                        print(error ?? "")
-                        return
-                    }
-                    
-                    if let dishImageUrl = metadata?.downloadURL()?.absoluteString{
-                        imageUrl = dishImageUrl
-                    }
-                })
-            }}else {
-            imageUrl = ""
-        }
+//        if(self.userPhoto.image != nil){
+//            if let uploadData = UIImagePNGRepresentation(self.userPhoto.image!){
+//                storageRef.put(uploadData, metadata: nil, completion: { (metadata, error) in
+//                    
+//                    if error != nil{
+//                        print(error ?? "")
+//                        return
+//                    }
+//                    
+//                    if let dishImageUrl = metadata?.downloadURL()?.absoluteString{
+//                        imageUrl = dishImageUrl
+//                    }
+//                })
+//            }}else {
+//            imageUrl = ""
+//        }
         
-        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text
+        let date = Date()
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "dd-MM-yyyy"
+        
+        let currentDate = formatter.string(from: date)
+        
+        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text, let faculty = faculty.text, let yearOfStudy = yearOfStudyTextField.text, let yearOfGraduation = yearOfGratuationTextField.text
             else{
                 print("Form not valid")
                 return
@@ -77,7 +87,7 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
             }
             
             let ref = FIRDatabase.database().reference(fromURL: "https://tophick-698df.firebaseio.com/")
-            let values = ["name": name, "email": email, "settings":"", "bookmarks":"", "likes":"", "surname":"", "pictureURL":imageUrl, "language":"en"]
+            let values = ["name": name, "email": email, "faculty":faculty, "registerDate":currentDate, "role":"student", "photo":"", "reviews": "[]", "yearOfGraduation":yearOfGraduation, "yearOfStudy":yearOfStudy]
             let usersReference = ref.child("users").child(uid)
             usersReference.updateChildValues(values, withCompletionBlock:{(err,ref) in
                 
@@ -85,8 +95,9 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
                     print(err ?? "")
                     return
                 }
-                //let mainView = NewsController()
-                //self.navigationController?.pushViewController(mainView, animated: true)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "CourseReviewViewController")
+                self.navigationController?.pushViewController(controller, animated: true)
             })
         })
     }

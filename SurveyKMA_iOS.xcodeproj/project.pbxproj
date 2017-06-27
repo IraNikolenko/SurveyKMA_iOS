@@ -7,10 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840749031EFC430800324FB8 /* CoursesReviewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840749021EFC430800324FB8 /* CoursesReviewTableController.swift */; };
 		840749061EFC437700324FB8 /* CourseReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840749051EFC437700324FB8 /* CourseReview.swift */; };
+		840E230F1F01B78200FFBD84 /* LectorReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E230E1F01B78200FFBD84 /* LectorReviewViewController.swift */; };
+		840E23121F01B86A00FFBD84 /* LectorReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E23111F01B86A00FFBD84 /* LectorReview.swift */; };
+		840E23161F01C02F00FFBD84 /* LectorReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E23151F01C02F00FFBD84 /* LectorReviewTableViewController.swift */; };
+		840E23181F01CC8700FFBD84 /* FacultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E23171F01CC8700FFBD84 /* FacultyViewController.swift */; };
+		840E231A1F01D17300FFBD84 /* NewLectorReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E23191F01D17300FFBD84 /* NewLectorReviewViewController.swift */; };
+		840E231C1F01E30500FFBD84 /* CoursesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E231B1F01E30500FFBD84 /* CoursesCollectionViewController.swift */; };
+		840E231E1F01E97400FFBD84 /* NewCourseReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E231D1F01E97400FFBD84 /* NewCourseReviewViewController.swift */; };
+		840E23201F02015B00FFBD84 /* DetailReviewLectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E231F1F02015B00FFBD84 /* DetailReviewLectorViewController.swift */; };
 		846EFD3E1EED89270005A65C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EFD3D1EED89270005A65C /* RegisterViewController.swift */; };
 		846EFD401EEDCD610005A65C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EFD3F1EEDCD610005A65C /* LoginViewController.swift */; };
+		84EC84A91EFFC8B600FC281A /* CourseReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84A81EFFC8B600FC281A /* CourseReviewViewController.swift */; };
+		84EC84AB1EFFD7A300FC281A /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84AA1EFFD7A300FC281A /* ReviewsTableViewController.swift */; };
+		84EC84AD1EFFE7DF00FC281A /* LectorsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84AC1EFFE7DF00FC281A /* LectorsCollectionViewController.swift */; };
+		84EC84AF1EFFE83400FC281A /* Lector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84AE1EFFE83400FC281A /* Lector.swift */; };
+		84EC84B11F0001E100FC281A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84B01F0001E100FC281A /* User.swift */; };
+		84EC84B31F000C4100FC281A /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84B21F000C4100FC281A /* Course.swift */; };
+		84EC84B51F00524500FC281A /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84B41F00524500FC281A /* MainScreenViewController.swift */; };
+		84EC84DE1F01A67700FC281A /* FacultyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84DD1F01A67700FC281A /* FacultyCollectionViewController.swift */; };
+		84EC84E01F01A7E000FC281A /* Faculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84DF1F01A7E000FC281A /* Faculty.swift */; };
 		84F84E651ED880DE00332B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F84E641ED880DE00332B30 /* AppDelegate.swift */; };
 		84F84E671ED880DE00332B30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F84E661ED880DE00332B30 /* ViewController.swift */; };
 		84F84E6A1ED880DE00332B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F84E681ED880DE00332B30 /* Main.storyboard */; };
@@ -21,10 +37,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		840749021EFC430800324FB8 /* CoursesReviewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesReviewTableController.swift; sourceTree = "<group>"; };
 		840749051EFC437700324FB8 /* CourseReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseReview.swift; sourceTree = "<group>"; };
+		840E230E1F01B78200FFBD84 /* LectorReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorReviewViewController.swift; sourceTree = "<group>"; };
+		840E23111F01B86A00FFBD84 /* LectorReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorReview.swift; sourceTree = "<group>"; };
+		840E23151F01C02F00FFBD84 /* LectorReviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorReviewTableViewController.swift; sourceTree = "<group>"; };
+		840E23171F01CC8700FFBD84 /* FacultyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyViewController.swift; sourceTree = "<group>"; };
+		840E23191F01D17300FFBD84 /* NewLectorReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLectorReviewViewController.swift; sourceTree = "<group>"; };
+		840E231B1F01E30500FFBD84 /* CoursesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesCollectionViewController.swift; sourceTree = "<group>"; };
+		840E231D1F01E97400FFBD84 /* NewCourseReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCourseReviewViewController.swift; sourceTree = "<group>"; };
+		840E231F1F02015B00FFBD84 /* DetailReviewLectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailReviewLectorViewController.swift; sourceTree = "<group>"; };
 		846EFD3D1EED89270005A65C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		846EFD3F1EEDCD610005A65C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		84EC84A81EFFC8B600FC281A /* CourseReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseReviewViewController.swift; sourceTree = "<group>"; };
+		84EC84AA1EFFD7A300FC281A /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
+		84EC84AC1EFFE7DF00FC281A /* LectorsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorsCollectionViewController.swift; sourceTree = "<group>"; };
+		84EC84AE1EFFE83400FC281A /* Lector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lector.swift; sourceTree = "<group>"; };
+		84EC84B01F0001E100FC281A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84EC84B21F000C4100FC281A /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		84EC84B41F00524500FC281A /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		84EC84DD1F01A67700FC281A /* FacultyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyCollectionViewController.swift; sourceTree = "<group>"; };
+		84EC84DF1F01A7E000FC281A /* Faculty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faculty.swift; sourceTree = "<group>"; };
 		84F84E611ED880DE00332B30 /* SurveyKMA_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyKMA_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F84E641ED880DE00332B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F84E661ED880DE00332B30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,8 +94,34 @@
 			isa = PBXGroup;
 			children = (
 				840749051EFC437700324FB8 /* CourseReview.swift */,
+				840E23111F01B86A00FFBD84 /* LectorReview.swift */,
+				84EC84AE1EFFE83400FC281A /* Lector.swift */,
+				84EC84B01F0001E100FC281A /* User.swift */,
+				84EC84B21F000C4100FC281A /* Course.swift */,
+				84EC84DF1F01A7E000FC281A /* Faculty.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		840E23101F01B79400FFBD84 /* collections with courses, lectors,reviews */ = {
+			isa = PBXGroup;
+			children = (
+				84EC84DD1F01A67700FC281A /* FacultyCollectionViewController.swift */,
+				840E23151F01C02F00FFBD84 /* LectorReviewTableViewController.swift */,
+				84EC84AA1EFFD7A300FC281A /* ReviewsTableViewController.swift */,
+				84EC84AC1EFFE7DF00FC281A /* LectorsCollectionViewController.swift */,
+				840E231B1F01E30500FFBD84 /* CoursesCollectionViewController.swift */,
+			);
+			name = "collections with courses, lectors,reviews";
+			sourceTree = "<group>";
+		};
+		84EC84DA1F0189C400FC281A /* registerAuth */ = {
+			isa = PBXGroup;
+			children = (
+				846EFD3D1EED89270005A65C /* RegisterViewController.swift */,
+				846EFD3F1EEDCD610005A65C /* LoginViewController.swift */,
+			);
+			name = registerAuth;
 			sourceTree = "<group>";
 		};
 		84F84E581ED880DE00332B30 = {
@@ -87,17 +145,23 @@
 		84F84E631ED880DE00332B30 /* SurveyKMA_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				84EC84DA1F0189C400FC281A /* registerAuth */,
 				840749041EFC435B00324FB8 /* Models */,
-				840749021EFC430800324FB8 /* CoursesReviewTableController.swift */,
-				846EFD3D1EED89270005A65C /* RegisterViewController.swift */,
-				846EFD3F1EEDCD610005A65C /* LoginViewController.swift */,
+				840E23101F01B79400FFBD84 /* collections with courses, lectors,reviews */,
+				84EC84A81EFFC8B600FC281A /* CourseReviewViewController.swift */,
+				840E230E1F01B78200FFBD84 /* LectorReviewViewController.swift */,
+				84EC84B41F00524500FC281A /* MainScreenViewController.swift */,
 				84F84E641ED880DE00332B30 /* AppDelegate.swift */,
 				84F84E661ED880DE00332B30 /* ViewController.swift */,
+				840E23171F01CC8700FFBD84 /* FacultyViewController.swift */,
 				84F84E681ED880DE00332B30 /* Main.storyboard */,
 				84F84E6B1ED880DE00332B30 /* Assets.xcassets */,
 				84F84E6D1ED880DE00332B30 /* LaunchScreen.storyboard */,
 				84F84E701ED880DE00332B30 /* Info.plist */,
 				84F84E761ED96A5000332B30 /* GoogleService-Info.plist */,
+				840E23191F01D17300FFBD84 /* NewLectorReviewViewController.swift */,
+				840E231D1F01E97400FFBD84 /* NewCourseReviewViewController.swift */,
+				840E231F1F02015B00FFBD84 /* DetailReviewLectorViewController.swift */,
 			);
 			path = SurveyKMA_iOS;
 			sourceTree = "<group>";
@@ -236,11 +300,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				846EFD401EEDCD610005A65C /* LoginViewController.swift in Sources */,
-				840749031EFC430800324FB8 /* CoursesReviewTableController.swift in Sources */,
+				84EC84B31F000C4100FC281A /* Course.swift in Sources */,
+				84EC84A91EFFC8B600FC281A /* CourseReviewViewController.swift in Sources */,
+				840E23181F01CC8700FFBD84 /* FacultyViewController.swift in Sources */,
 				846EFD3E1EED89270005A65C /* RegisterViewController.swift in Sources */,
+				84EC84AF1EFFE83400FC281A /* Lector.swift in Sources */,
+				840E231A1F01D17300FFBD84 /* NewLectorReviewViewController.swift in Sources */,
+				840E231C1F01E30500FFBD84 /* CoursesCollectionViewController.swift in Sources */,
+				84EC84E01F01A7E000FC281A /* Faculty.swift in Sources */,
+				84EC84B51F00524500FC281A /* MainScreenViewController.swift in Sources */,
 				84F84E671ED880DE00332B30 /* ViewController.swift in Sources */,
+				840E23121F01B86A00FFBD84 /* LectorReview.swift in Sources */,
+				840E231E1F01E97400FFBD84 /* NewCourseReviewViewController.swift in Sources */,
 				840749061EFC437700324FB8 /* CourseReview.swift in Sources */,
+				840E230F1F01B78200FFBD84 /* LectorReviewViewController.swift in Sources */,
+				84EC84DE1F01A67700FC281A /* FacultyCollectionViewController.swift in Sources */,
 				84F84E651ED880DE00332B30 /* AppDelegate.swift in Sources */,
+				840E23161F01C02F00FFBD84 /* LectorReviewTableViewController.swift in Sources */,
+				840E23201F02015B00FFBD84 /* DetailReviewLectorViewController.swift in Sources */,
+				84EC84AB1EFFD7A300FC281A /* ReviewsTableViewController.swift in Sources */,
+				84EC84B11F0001E100FC281A /* User.swift in Sources */,
+				84EC84AD1EFFE7DF00FC281A /* LectorsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
